@@ -1,0 +1,136 @@
+[
+    {
+        "id": 1,
+        "cardLink": "./single-page",
+        "img": "../img/product/men/product_m1.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "color" : "White",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 2,
+        "cardLink": "./single-page",
+        "img": "../img/product/women/product_wm1.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "XS",
+            "S",
+            "L"
+            
+        ],
+        "color" : "Red",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 3,
+        "cardLink": "./single-page",
+        "img": "../img/product/men/product_m2.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "color" : "Darkblue",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 4,
+        "cardLink": "./single-page",
+        "img": "../img/product/women/product_wm2.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "S",
+            "M",
+            "XL"
+        ],
+        "color" : "White",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 5,
+        "cardLink": "./single-page",
+        "img": "../img/product/women/product_wm3.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "S",
+            "XL"
+        ],
+        "color" : "White-Black",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 6,
+        "cardLink": "./single-page",
+        "img": "../img/product/men/product_m3.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "XL"
+        ],
+        "color" : "Gray",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 7,
+        "cardLink": "./single-page",
+        "img": "../img/product/men/product_m4.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "X",
+            "XL"
+        ],
+        "color": "Beige",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 8,
+        "cardLink": "./single-page",
+        "img": "../img/product/men/product_m5.jpg",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "X",
+            "XL"
+        ],
+        "color" : "Darkblue",
+        "price": "52.00",
+        "quantity": 1
+    },
+    {
+        "id": 9,
+        "cardLink": "./single-page",
+        "img": "../img/product/men/proguct_pm9.png",
+        "title": "MANGO PEOPLE T-SHIRT",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "X",
+            "XL"
+        ],
+        "color" : "Blue",
+        "price": "52.00",
+        "quantity": 1
+    }
+]
