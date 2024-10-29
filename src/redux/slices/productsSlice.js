@@ -5,15 +5,14 @@ const url = "../data/data.json"
 export async function fetchProducts(url) {
   try {
     const responce = await fetch(url);
-    // return await responce.json();
     const data = await responce.json();
-    // console.log(data);
     return data;
     
   } catch (error) {
     console.error(error.message);
   }
 }
+
 
 const initialState = {
   products: JSON.parse(localStorage.getItem("basket") || "[]"),
@@ -34,14 +33,10 @@ const productSlice = createSlice({
   reducers: {
     
     addProduct: (state, action) => {
-      // const newProduct = state.products.products.find(product => product.id === action.payload);
-      const newProduct = data.find(product =>action.payload);
+      const productId = action.payload.id
+      const newProduct = data.find(product => product.id === productId);
 
-      
-      // console.log(action.payload);
-      
-      const products = [newProduct];
-      console.log(newProduct);
+      const products = [...state.products, newProduct];
       saveToLocalStorage(products);
       state.products = products;
     },
