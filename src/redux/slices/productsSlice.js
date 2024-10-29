@@ -17,30 +17,9 @@ export async function fetchProducts(url) {
 
 const initialState = {
   products: JSON.parse(localStorage.getItem("basket") || "[]"),
+  
 };
 
-function findProductInData(array, productId) {
-  const addedProduct = array.find(product => product.id === productId);
- 
-
-  if (addedProduct !== undefined) {
-    return addedProduct;
-  }
-  // return addedProduct;
-}
-
-function haveProductInStore(productId) {
-  let isInStore = false;
-  const produstLS = JSON.parse(localStorage.getItem("basket"));
-  produstLS.forEach(product => {
-
-    if (product.id === productId) {
-      isInStore = true;
-      return isInStore;
-    }
-  });
-  return isInStore;
-}
 
 export const data = await fetchProducts(url);
 
@@ -53,14 +32,16 @@ const productSlice = createSlice({
   name: "products",
   initialState,
   reducers: {
+    
     addProduct: (state, action) => {
-      const newProduct = findProductInData(data, action.payload);
-      // console.log(data);
+      // const newProduct = state.products.products.find(product => product.id === action.payload);
+      const newProduct = data.find(product =>action.payload);
+
+      
       // console.log(action.payload);
-      if (haveProductInStore(action.payload)) return;
       
-      const products = [...state.products, newProduct];
-      
+      const products = [newProduct];
+      console.log(newProduct);
       saveToLocalStorage(products);
       state.products = products;
     },

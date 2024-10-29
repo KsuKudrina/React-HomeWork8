@@ -9,7 +9,7 @@ import { useEffect, useState } from "react"
 
 export const Header = () => {
     const products = useSelector((state) => state.products.products)
-
+    console.log(products);
     const [subtotal , setSubtotal] = useState(0);
 
     useEffect(()=> {
@@ -66,9 +66,11 @@ export const Header = () => {
                 </summary>
                 <div className="box basket__box">
                     <div className="basket-product">
+                    
                     {products.length !== 0 ?
                         products.map(product =>
-                            <ShoppingCartWindow key={product.id}
+                            <ShoppingCartWindow 
+                                key={product.id}
                                 id={product.id}
                                 cardLink={product.cardLink}
                                 img={product.img}

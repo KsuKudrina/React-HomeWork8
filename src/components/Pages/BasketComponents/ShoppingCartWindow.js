@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { deleteProduct } from "../../../redux/slices/productsSlice";
 
-const ShoppingCartWindow = ({id, cardLink, img, title, price}) => {
+const ShoppingCartWindow = ({id, cardLink, img, title, price, color, size}) => {
 
     const dispatch = useDispatch();
     const handleDelete = (e) => {
@@ -24,7 +24,10 @@ const ShoppingCartWindow = ({id, cardLink, img, title, price}) => {
                                 <i className="fa fa-star f123"></i>
                                 <i className="fa fa-star-half-o"></i>
                             </div>
-                     <p className="basket-cost">1 x ${price}</p>
+                    <p className="basket-cost">1 x ${color}</p>
+                    <p className="basket-cost">1 x ${size}</p>
+                    <p className="basket-cost">1 x ${price}</p>
+                     
                      <a href="/#"
                      onClick={handleDelete}
                             ><i className="fa fa-times-circle" aria-hidden="true"></i>
